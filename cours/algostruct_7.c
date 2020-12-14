@@ -123,5 +123,9 @@ int main()
 	tete = supprimer_tete(tete);
 	affichage_liste(tete);
 	
+	// On vide toute la chaîne de la mémoire
+	while(tete != NULL)
+		tete = supprimer_tete(tete);
+	
 	return 0;
 }
