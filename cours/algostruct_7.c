@@ -17,17 +17,18 @@ noeud_t * creer_noeud(int val, noeud_t* prec, noeud_t* suiv)
 	if(prec != NULL)
 		prec->suivant = actuel;
 		
-	
 	return actuel;
 }
 
 void supprimer_noeud(noeud_t * actuel, noeud_t * prec)
 {
+	// Si ce n'est pas un noeud on ne s'en occupe pas
+	if(actuel == NULL)
+		return;
+
 	if(prec != NULL)
 		prec->suivant = actuel->suivant;
-	
-	if(actuel != NULL)
-		free(actuel);
+	free(actuel);
 		
 }
 
