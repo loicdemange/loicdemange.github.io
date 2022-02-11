@@ -129,7 +129,6 @@ int main(void)
 	// ATR
   	atr(11,"Hello scard");
 
-	taille=0;
 	sw2=0;		// pour éviter de le répéter dans toutes les commandes
   	// boucle de traitement des commandes
   	for(;;)
